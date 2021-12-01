@@ -1,0 +1,63 @@
+body{
+	
+	background-color: #F5FFFA;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	min-height: 100vh;
+
+}
+h1, h2{
+	margin-top:0px;
+	font-family: 'Merriweather', serif;
+
+}
+
+#home{
+
+	background: #800000;
+}
+
+.form-container{
+	margin-top: 20px;
+	background: #fff;
+	padding: 30px;
+	padding-right: 60px;
+	padding-left: 60px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px #000;
+	margin: 15px auto;
+	max-width: 380px;	
+}
+.jumbotron{
+		position: relative;
+		height: 200px;
+
+}
+
+
+div.form{
+	display: block;
+    text-align: center;
+
+}
+.form_size{
+	float: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+}
+
+.img_size{
+	float: top;
+	width: 60%;
+	height: 20%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+footer{
+
+	background: #F5FFFA;
+}

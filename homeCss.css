@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background: #800000;
+}
+.container-fluid{
+  margin-left: 250px;
+}
+#main {
+    transition: margin-left 1s;
+    padding: 16px;
+    margin: 40px 0px 0px 250px;
+  }
+.addBody{
+	background: #fff;
+	
+}
+option, select{
+  font-weight: bold;
+}
+.sidebar{
+	position: fixed;
+  	width: 240px;
+  	left: -240px;
+  	height: 100%;
+  	background: #800000;
+  	transition: all 1s ease;
+
+}
+.sidebar h2{
+  font-size: 20px;
+  color: #FFD700;
+  line-height: 70px;
+  text-align: center;
+  background: #800000;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+  display: block;
+  /*height: 65px;*/
+  width: 100%;
+  color: white;
+  line-height: 50px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 1s ease;
+}
+
+.sidebar ol li{
+	/*padding-top: 10px; */
+	width: 100%;
+	text-align: left;
+	position: relative;
+
+}
+.sidebar ol li a{
+	display: block;
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 0px 30px;
+	/*margin: 10px 0;*/
+	text-decoration: none;
+}
+.far, .fas{
+	margin-right: 10px;
+}
+.sidebar a:hover{
+	color: #800000;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #800000;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all 1s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,#btn,#cancel{
+    display: none;
+  }
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+#addBooks{
+	width: 768px;
+	margin: auto;
+	padding-top: 40px;
+
+}
+#showBooks{
+  /*width: 768px;*/
+  margin-right: auto;
+  padding-top: 40px;
+
+}
+#previewBooks{
+	width: 768px;
+	margin: auto;
+	padding-top: 400px;
+
+}
+
+.btn{
+	width: 50%;
+	float: center;
+}
+legend{
+	font-size: 3.5em;
+}
+.container-book{
+	height: 34rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.sidebar ol li:hover{
+	background: #fff;
+	letter-spacing: 0.5px;
+	transition: 0.4s ease;
+	border-left: 10px solid #fdd600;
+	border-radius: 50px 0 0 50px;
+
+}
+h4, td{
+  font-weight: bold;
+}
+td{
+  text-align: center;
+}
+
